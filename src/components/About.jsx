@@ -5,11 +5,25 @@ const About = () => {
         <section className="section container" style={{ background: 'var(--card-bg)', borderRadius: '20px', padding: '4rem' }}>
             <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
                 <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>About <span className="gradient-text">Me</span></h2>
-                <p style={{ fontSize: '1.1rem', color: '#ccc', marginBottom: '3rem', lineHeight: '1.8' }}>
-                    I am an AI Research Assistant and Full-Stack Engineer specializing in
-                    <strong style={{ color: '#fff' }}> Human-Centered AI, LLM Evaluation, and Production-Grade Systems</strong>.
-                    With a background in Computer Science and Digital Media, I bridge the gap between rigorous research and scalable software engineering.
-                </p>
+                <div style={{ textAlign: 'left', marginBottom: '3rem', fontSize: '1.1rem', color: '#ccc', lineHeight: '1.8' }}>
+                    <p style={{ marginBottom: '1.5rem' }}>
+                        I am an <strong style={{ color: '#fff' }}>AI Engineer and Research Assistant</strong> working at the intersection of large language models, human-AI interaction, and production AI systems.
+                    </p>
+                    <p style={{ marginBottom: '1.5rem' }}>
+                        My background combines experimental research (LLM persona evaluation, user studies, statistical analysis) with full-stack AI engineering (RAG systems, agent orchestration, cloud deployment, real-time voice interfaces).
+                    </p>
+                    <p style={{ marginBottom: '1.5rem' }}>
+                        I have designed and built:
+                    </p>
+                    <ul style={{ paddingLeft: '1.5rem', marginBottom: '1.5rem', listStyleType: 'disc' }}>
+                        <li style={{ marginBottom: '0.5rem' }}>A <strong style={{ color: '#fff' }}>multi-LLM persona evaluation platform</strong> used in academic research (TUM, UniBW)</li>
+                        <li style={{ marginBottom: '0.5rem' }}>A <strong style={{ color: '#fff' }}>production-grade RAG system</strong> grounded in German government regulations</li>
+                        <li style={{ marginBottom: '0.5rem' }}>Low-latency <strong style={{ color: '#fff' }}>conversational AI agents in VR</strong> with speech-to-speech interaction</li>
+                    </ul>
+                    <p>
+                        My long-term goal is to build reliable, interpretable, and user-aligned AI systems that can be deployed safely in real-world environments.
+                    </p>
+                </div>
 
                 <h3 style={{ fontSize: '1.8rem', marginBottom: '2rem', color: 'var(--accent-primary)' }}>Education</h3>
 

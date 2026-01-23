@@ -2,23 +2,51 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <section className="section container" style={{ minHeight: '90vh', display: 'flex', alignItems: 'center' }}>
-            <div className="animate-fade-in">
-                <h1 style={{ fontSize: '4rem', fontWeight: '700', marginBottom: '1rem', lineHeight: 1.1 }}>
-                    Hi, I'm <span className="gradient-text">Youssef Salem</span>
-                    <br />
-                    Creative Developer.
-                </h1>
-                <p style={{ fontSize: '1.25rem', color: '#aaaaaa', marginBottom: '2rem', maxWidth: '600px' }}>
-                    I build premium digital experiences that blend design and technology.
-                    Focusing on performance, aesthetics, and user interaction.
-                </p>
-                <div style={{ display: 'flex', gap: '1rem' }}>
-                    <button className="btn-primary">View My Work</button>
-                    <button className="btn-primary" style={{ background: 'transparent', border: '1px solid var(--accent-secondary)' }}>
-                        Contact Me
-                    </button>
-                </div>
+        <section className="hero container" style={{
+            minHeight: '90vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+            paddingTop: '4rem'
+        }}>
+            <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem', lineHeight: '1.2' }}>
+                Hi, I'm <span className="gradient-text">Youssef Mazen Salem</span>
+            </h1>
+            <p style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: '#e2e8f0', fontWeight: '500' }}>
+                AI Engineer & LLM Researcher | RAG Systems | Conversational AI | MLOps
+            </p>
+            <p style={{ fontSize: '1.2rem', color: '#94a3b8', maxWidth: '800px', marginBottom: '2.5rem', lineHeight: '1.6' }}>
+                I build production-ready LLM systems and evaluate how humans perceive AI behavior,
+                from RAG pipelines and agentic workflows to real-time voice-driven VR assistants.
+            </p>
+
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', marginBottom: '3rem' }}>
+                {['TUM & UniBW Research Assistant', 'LLM Evaluation & Personas', 'FastAPI · LangChain · Kubernetes · Unity · AWS'].map(badge => (
+                    <span key={badge} style={{
+                        padding: '0.5rem 1rem',
+                        background: 'rgba(99, 102, 241, 0.1)',
+                        color: '#818cf8',
+                        borderRadius: '20px',
+                        border: '1px solid rgba(99, 102, 241, 0.2)',
+                        fontSize: '0.9rem'
+                    }}>
+                        {badge}
+                    </span>
+                ))}
+            </div>
+
+            <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+                <button className="btn btn-primary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
+                    View Projects
+                </button>
+                <button className="btn" style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)' }} onClick={() => window.open('/cv.pdf', '_blank')}>
+                    Download CV
+                </button>
+                <button className="btn" style={{ background: 'transparent', border: '1px solid var(--accent-primary)', color: 'var(--accent-primary)' }} onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
+                    Contact Me
+                </button>
             </div>
         </section>
     );

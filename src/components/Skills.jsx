@@ -2,20 +2,20 @@ import React from 'react';
 
 const skillCategories = [
     {
-        title: 'Generative AI & ML',
-        skills: ['RAG', 'LangChain', 'LLM Fine-tuning', 'Transformers', 'PyTorch', 'Scikit-Learn', 'NLP']
+        title: 'LLM & AI',
+        skills: ['RAG', 'LangChain', 'LangGraph', 'HuggingFace', 'Prompt Engineering', 'Evaluation', 'Persona Design']
     },
     {
-        title: 'Data Science & Analytics',
-        skills: ['Python', 'SQL', 'Pandas', 'NumPy', 'Matplotlib', 'Statistical Modeling', 'EDA']
-    },
-    {
-        title: 'Backend & Engineering',
-        skills: ['FastAPI', 'REST APIs', 'System Design', 'Linux', 'Automation', 'Git']
+        title: 'Backend & Systems',
+        skills: ['FastAPI', 'Docker', 'Kubernetes', 'Linux', 'REST', 'WebSockets', 'Streaming']
     },
     {
         title: 'MLOps & Cloud',
-        skills: ['Docker', 'Kubernetes', 'AWS', 'CI/CD', 'Model Packaging', 'A/B Testing']
+        skills: ['AWS', 'CI/CD', 'Vector DBs', 'Monitoring', 'Model Routing']
+    },
+    {
+        title: 'Research & Stats',
+        skills: ['Experimental design', 'ANOVA', 'Likert analysis', 'SPSS', 'Jamovi']
     }
 ];
 

@@ -3,34 +3,33 @@ import React from 'react';
 const experiences = [
     {
         role: 'AI Research Assistant',
-        company: 'University of the Bundeswehr Munich (UniBW) — TUM',
-        period: '03/2025 - 09/2025',
+        company: 'TUM & UniBW',
+        period: '03/2025 - Present',
         description: [
-            'Designed human-centered AI evaluation pipelines for LLM-driven conversational agents.',
-            'Architected a 4x2 within-subjects factorial experiment to benchmark multiple LLMs.',
-            'Built a full-stack experimentation platform using Python, FastAPI, and Next.js.',
-            'Engineered LLM persona prompting strategies manipulating epistemic certainty.',
-            'Performed statistical analysis using repeated-measures ANOVA.'
+            'Designed controlled persona prompting framework for LLM behavioral studies.',
+            'Built evaluation platform with automated data logging & statistical pipelines.',
+            'Conducted repeated-measures ANOVA on user perception metrics.',
+            'Co-authoring a paper on human perception of LLM certainty.'
         ]
     },
     {
         role: 'Application Specialist',
-        company: 'Alliance Healthcare GmbH',
+        company: 'Alliance Healthcare',
         period: '09/2024 - 05/2025',
         description: [
-            'Developed Linux/Unix automation scripts for production data workflows.',
-            'Supported and optimized business-critical data pipelines, improving system reliability.',
-            'Re-architected technical documentation for automated systems.'
+            'Built Linux automation pipelines to replace manual workflows.',
+            'Optimized production job scheduling, reducing processing time by 35%.',
+            'Improved system reliability & monitoring for business-critical data.'
         ]
     },
     {
         role: 'Database Software Engineer',
-        company: 'Middle East Oil Refinery (MIDOR)',
+        company: 'MIDOR',
         period: '07/2024 - 08/2024',
         description: [
             'Built Python-based ETL automation scripts, reducing manual processing by 10+ hours/week.',
             'Implemented enterprise-scale data validation, detecting 150+ data inconsistencies.',
-            'Collaborated with engineering teams to translate business requirements into pipelines.'
+            'Collaborated with engineering teams to translate business data requirements into robust pipelines.'
         ]
     }
 ];
