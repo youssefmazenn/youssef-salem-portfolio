@@ -12,7 +12,7 @@ const Hero = () => {
             paddingTop: '4rem'
         }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem', lineHeight: '1.2' }}>
-                Hi, I'm <span className="gradient-text">Youssef Mazen Salem</span>
+                Hi, I'm <span className="gradient-text">Youssef Salem</span>
             </h1>
             <p style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: '#e2e8f0', fontWeight: '500' }}>
                 AI Engineer & LLM Researcher | RAG Systems | Conversational AI | MLOps
@@ -41,10 +41,10 @@ const Hero = () => {
                 <button className="btn btn-primary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
                     View Projects
                 </button>
-                <button className="btn" style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)' }} onClick={() => window.open('/cv.pdf', '_blank')}>
+                <button className="btn btn-purple" onClick={() => window.open('/cv.pdf', '_blank')}>
                     Download CV
                 </button>
-                <button className="btn" style={{ background: 'transparent', border: '1px solid var(--accent-primary)', color: 'var(--accent-primary)' }} onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
+                <button className="btn btn-cyan" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
                     Contact Me
                 </button>
             </div>

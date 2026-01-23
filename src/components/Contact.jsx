@@ -28,7 +28,7 @@ const Contact = () => {
                     <a href="#" style={{ color: '#666', textDecoration: 'none', cursor: 'default' }}>Google Scholar</a>
                 </div>
                 <p style={{ color: '#666', fontSize: '0.9rem' }}>Berlin, Germany</p>
-                <p style={{ color: '#444', fontSize: '0.8rem' }}>© 2026 Youssef Mazen Salem</p>
+                <p style={{ color: '#444', fontSize: '0.8rem' }}>© 2026 Youssef Salem</p>
             </footer>
         </section>
     );

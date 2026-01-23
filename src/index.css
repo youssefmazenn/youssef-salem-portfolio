@@ -48,10 +48,9 @@ ul {
   background-clip: text;
 }
 
-.btn-primary {
+.btn {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   color: white;
   border-radius: 50px;
   font-weight: 600;
@@ -60,15 +59,45 @@ ul {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn-primary:hover {
+.btn:hover {
   transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+}
+
+.btn-primary:hover {
   box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+.btn-purple {
+  background: var(--accent-primary);
+}
+
+.btn-purple:hover {
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.6);
+}
+
+.btn-cyan {
+  background: var(--accent-secondary);
+}
+
+.btn-cyan:hover {
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.6);
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
