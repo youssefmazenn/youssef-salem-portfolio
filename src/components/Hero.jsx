@@ -41,9 +41,9 @@ const Hero = () => {
                 <button className="btn btn-primary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
                     View Projects
                 </button>
-                <button className="btn btn-purple" onClick={() => window.open('/cv.pdf', '_blank')}>
+                <a href="./cv.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-purple" style={{ textDecoration: 'none' }}>
                     Download CV
-                </button>
+                </a>
                 <button className="btn btn-cyan" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
                     Contact Me
                 </button>
